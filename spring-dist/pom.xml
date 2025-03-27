@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.easybank</groupId>
+        <artifactId>easybank-development</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <artifactId>spring-dist</artifactId>
+    <packaging>pom</packaging>
+
+    <properties>
+        <build.version>${project.version}</build.version>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>spring-accounts</id>
+            <modules>
+                <module>../modules/accounts</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>spring-cards</id>
+            <modules>
+                <module>../modules/cards</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>spring-loans</id>
+            <modules>
+                <module>../modules/loans</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>spring-message</id>
+            <modules>
+                <module>../modules/message</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>spring-config</id>
+            <modules>
+                <module>../modules/configserver</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>spring-gateway</id>
+            <modules>
+                <module>../modules/gatewayserver</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>spring-eureka</id>
+            <modules>
+                <module>../modules/eurekaserver</module>
+            </modules>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
