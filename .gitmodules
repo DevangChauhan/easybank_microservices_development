@@ -31,3 +31,6 @@
 [submodule "modules/easybank-config"]
 	path = modules/easybank-config
 	url = git@github.com:DevangChauhan/easybank-config.git
+[submodule "modules/easybank_bom"]
+	path = modules/easybank_bom
+	url = git@github.com:DevangChauhan/easybank_bom.git

@@ -6,14 +6,24 @@
         <groupId>io.easybank</groupId>
         <artifactId>easybank-development</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <artifactId>spring-dist</artifactId>
     <packaging>pom</packaging>
 
     <properties>
         <build.version>${project.version}</build.version>
     </properties>
+
+    <modules>
+        <module>../modules/accounts</module>
+        <module>../modules/cards</module>
+        <module>../modules/configserver</module>
+        <module>../modules/loans</module>
+        <module>../modules/message</module>
+        <module>../modules/gatewayserver</module>
+        <module>../modules/eurekaserver</module>
+    </modules>
 
     <profiles>
         <profile>
