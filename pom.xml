@@ -7,19 +7,56 @@
         <groupId>io.easybank</groupId>
         <artifactId>easybank_bom</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>modules/easybank_bom/pom.xml</relativePath>
     </parent>
+
     <artifactId>easybank-development</artifactId>
     <packaging>pom</packaging>
-    
+
     <name>easybank-development</name>
-    <description>EasyBank Development</description>
+    <description>EasyBank Development - Microservices Platform</description>
+    <url>https://github.com/DevangChauhan/easybank_microservices_development</url>
 
     <modules>
         <module>spring-dist</module>
     </modules>
 
     <properties>
-        <java.version>21</java.version>
+        <!-- Inherit properties from BOM -->
+        <main.basedir>${project.basedir}</main.basedir>
     </properties>
 
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/DevangChauhan/easybank_microservices_development</url>
+        <connection>scm:git:git@github.com:DevangChauhan/easybank_microservices_development.git</connection>
+        <developerConnection>scm:git:git@github.com:DevangChauhan/easybank_microservices_development.git
+        </developerConnection>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/DevangChauhan/easybank_microservices_development/issues</url>
+    </issueManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- Define any project-wide plugin configurations here -->
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <!-- Add plugins that should apply to all modules -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
