@@ -34,3 +34,6 @@
 [submodule "modules/easybank_bom"]
 	path = modules/easybank_bom
 	url = git@github.com:DevangChauhan/easybank_bom.git
+[submodule "modules/customer"]
+	path = modules/customer
+	url = git@github.com:DevangChauhan/customer.git
