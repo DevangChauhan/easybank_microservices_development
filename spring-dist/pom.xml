@@ -28,6 +28,7 @@
         <module>../modules/message</module>
         <module>../modules/gatewayserver</module>
         <module>../modules/eurekaserver</module>
+        <module>../modules/customer</module>
     </modules>
 
     <!-- Define common dependencies for all microservices -->
